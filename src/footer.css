@@ -1,0 +1,21 @@
+ul {
+    align-content: center;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 44px;
+}
+
+.table{
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    align-content:center;
+    background-color: #040404;
+    text-align: center;
+}
+
+img{
+    display: inline;
+    padding: 4px;
+    width: 3%;
+}

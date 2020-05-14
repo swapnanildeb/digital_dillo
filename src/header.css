@@ -1,0 +1,26 @@
+.navbar-expand-lg{
+    background-color: #040404;
+    color: #FFFFFF;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+}
+
+nav .navbar-nav li a:hover{
+    color: white !important;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+a:hover {
+	color: gray;
+}
+
+.navbar-brand b{
+    color: white !important;
+
+}
+
