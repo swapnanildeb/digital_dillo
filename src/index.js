@@ -14,12 +14,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const routing = (
     <Router>
         <div>
-            <Header />
             <Switch>
                 <Route exact path="/" component={App} />
 
-            </Switch>
-            <Footer />    </div>
+            </Switch>   </div>
     </Router>
 );
 
