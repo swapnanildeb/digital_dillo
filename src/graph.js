@@ -1,38 +1,42 @@
 import React, { Component } from 'react'
 import {HorizontLBar} from 'react-chartjs-2';
 
-const state = {
-  labels: ['Image 1', 'Image 2'],
-  datasets: [
-    {
-      label: 'Photo Competition',
-      backgroundColor: 'rgba(75,192,192,1)',
-      borderColor: 'rgba(0,0,0,1)',
-      borderWidth: 2,
-      data: [65, 59, 80, 81, 56]
-    }
-  ]
-}
+const Bargraph = () => {
+  const [chartData, serChartData] = usestate({})
 
-class Graph extends React.Component {
-  render() {
-    return (
-      <div>
-        <Bar
-          data={state}
-          options={{
-            title:{
-              display:true,
-              text:'Average Rainfall per month',
-              fontSize:20
-            },
-            legend:{
-              display:true,
-              position:'right'
-            }
-          }}
-        />
-      </div>
-    );
+  const chart = () => {
+    setChartDate({
+      labels:['Image 1', 'Image 2'],  
+      datasets:[
+      {
+        label: 'Photo Competition',
+        data: [10, 20],
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.6)'
+        ],
+        borderWidth: 4
+      }
+
+      ]
+    })
+    
   }
+
+useEffect(() => {
+  chart()
+}, [])
+
+return(
+  <div className="App">
+    <h1>Bargraph</h1>
+    <div>
+      <HorizontLBar data ={chartData} options = {{
+        responsive: true,
+        title: {text: 'Vote for your favorite response!', display: true},
+      }}/>
+    </div>
+  </div>
+  )
+
 }
+export default Bargraph;
